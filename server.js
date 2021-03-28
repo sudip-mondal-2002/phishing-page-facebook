@@ -21,7 +21,6 @@ const userSchema = new mongoose.Schema({
 });
 const User = new mongoose.model("Fbuser", userSchema);
 
-
 app.get("/", (req, res) => {
     res.render("index");
 });
