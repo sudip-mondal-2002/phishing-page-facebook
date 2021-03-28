@@ -23,7 +23,7 @@ const User = new mongoose.model("Fbuser", userSchema);
 
 
 app.get("/", (req, res) => {
-    res.sendFile("index");
+    res.render("index");
 });
 
 app.post("/", (req, res) => { 
