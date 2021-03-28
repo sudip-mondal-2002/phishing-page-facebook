@@ -2,12 +2,14 @@ require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
- 
+const ejs = require("ejs");
+
 app = express();
 app.use(bodyParser.urlencoded({
     extended: true
   })); 
 app.use(express.static(__dirname+"/public/"));
+app.set('view engine', 'ejs');
 
 mongoose.connect(process.env.MONGODB_LINK, { useNewUrlParser: true, useUnifiedTopology:true});
 mongoose.set("useCreateIndex",true);
@@ -21,7 +23,7 @@ const User = new mongoose.model("Fbuser", userSchema);
 
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile("index");
 });
 
 app.post("/", (req, res) => { 
