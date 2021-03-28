@@ -1,0 +1,75 @@
+div {
+}
+
+#facebook-paragraph {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  width: auto;
+  padding-left: 30px;
+}
+
+@media (min-width: 576px) {
+  #brandholder {
+    padding: 100px 60px;
+    text-align: left;
+  }
+}
+
+#login-button {
+  width: 100%;
+}
+
+#forgot-pass {
+  width: 100%;
+  text-align: center;
+}
+
+#create-acc {
+  width: 100%;
+  text-align: center;
+}
+
+#create-acc-but {
+  width: 70%;
+}
+
+@media (min-width: 500px) {
+  #card-holder {
+    padding: 2% 15%;
+  }
+}
+
+.form-control.cred-input {
+  padding: 22px;
+}
+
+.holder {
+  padding: 5px;
+  text-align: center;
+}
+
+#hero {
+  background-color: #f0f2f5;
+}
+
+#logo {
+  width: 50%;
+}
+
+@media (min-width: 576px) {
+  #main {
+    padding: 7% 15%;
+  }
+}
+
+#brandholder {
+  padding: 20px 20px;
+}
+
+@media (max-width: 500px) {
+  #card-holder {
+    padding: 3% 10%;
+  }
+}
+
